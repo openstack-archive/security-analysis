@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = security-analysis
+omit = security-analysis/openstack/*
+
+[report]
+ignore_errors = True
