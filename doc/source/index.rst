@@ -42,6 +42,14 @@ Barbican (Newton)
    artifacts/barbican/newton/architecture-page.rst
    artifacts/barbican/newton/review-findings.rst
 
+Keystonemiddleware (Pike)
+-------------------------
+.. toctree::
+   :maxdepth: 1
+
+   artifacts/keystonemiddleware/pike/architecture-page.rst
+   artifacts/keystonemiddleware/pike/review-findings.rst
+
 
 Indices and tables
 ==================

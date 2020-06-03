@@ -26,7 +26,7 @@ keystonemiddleware security review findings - 4.17.1/pike
 
 
 1. Security memcache with Pycrypto library
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Risk: Project documentation recommends use of the pycrypto library to secure
   memcache. Pycrypto is no longer maintained [0] with a last release made in

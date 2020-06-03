@@ -170,8 +170,7 @@ Data Assets:
   - Availability Failure Impact: barbican could no longer create new secrets
     without access to the queue.
 
-- *Identity Service (keystone) Event Queue Credentials [Including endpoint
-address]*:
+- *Identity Service (keystone) Event Queue Credentials [Including endpoint address]*:
 
   - Integrity Failure Impact: An attacker could setup their own queue, point
     barbican to this rogue queue and by publishing events, delete all

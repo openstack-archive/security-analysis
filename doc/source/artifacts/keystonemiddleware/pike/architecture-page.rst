@@ -68,10 +68,12 @@ Data asset impact analysis
 
 Data Assets:
 - *Authorization Token*:
+
   - Integrity Failure Impact: Attacker that can capture and hijack a valid
     auth token can get access to anything scoped to the token.
 
 - *keystonemiddleware.conf*:
+
   - Integrity Failure Impact: Attacker who can read the config file can gain
     access to the memcache encryption key, which can allow them to access and
     modify all cached tokens.
@@ -81,6 +83,7 @@ Interfaces
 ~~~~~~~~~~
 
 1. User -> KeystoneMiddleware *[TLS]*:
+
    - Assets in flight: keystone Token
    - An attacker who can successfully intercept the token can modify anything
      that the token is scoped to. This has potential availability impact.

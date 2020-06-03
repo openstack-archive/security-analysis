@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
-    'oslosphinx'
+    'openstackdocstheme'
 ]
 
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
@@ -40,6 +40,11 @@ master_doc = 'index'
 project = u'security-analysis'
 copyright = u'2013, OpenStack Foundation'
 
+# openstackdocstheme options
+openstackdocs_repo_name = 'openstack/security-analysis'
+openstackdocs_bug_project = 'openstack-ossg'
+openstackdocs_bug_tag = ''
+
 # If true, '()' will be appended to :func: etc. cross-reference text.
 add_function_parentheses = True
 
@@ -48,7 +53,7 @@ add_function_parentheses = True
 add_module_names = True
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # -- Options for HTML output --------------------------------------------------
 
@@ -57,6 +62,7 @@ pygments_style = 'sphinx'
 # html_theme_path = ["."]
 # html_theme = '_theme'
 # html_static_path = ['static']
+html_theme = 'openstackdocs'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = '%sdoc' % project
